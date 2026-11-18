@@ -35,6 +35,11 @@ a{color:var(--cyan)}
 .btn:hover{box-shadow:0 0 34px rgba(34,211,238,.75)}
 .btn small{font-weight:700;opacity:.75}
 .btn.alt{color:#fff;background:linear-gradient(90deg,var(--violet),var(--pink));box-shadow:0 0 22px rgba(139,92,246,.5);margin-top:12px}
+.proband{position:relative;z-index:2;display:block;text-align:center;padding:9px 16px;font-weight:800;font-size:15px;color:#fff;text-decoration:none;letter-spacing:.03em;background:linear-gradient(90deg,rgba(139,92,246,.55),rgba(244,114,182,.45),rgba(34,211,238,.45));border-bottom:1px solid rgba(165,180,252,.5);box-shadow:0 0 26px rgba(139,92,246,.4)}
+.proband:hover{filter:brightness(1.15)}
+.prolink{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#c4b5fd;text-decoration:none;padding:8px 10px;border-radius:10px;border:1px dashed rgba(139,92,246,.5);background:rgba(139,92,246,.07)}
+.prolink:hover{border-style:solid;color:#fff;box-shadow:0 0 18px rgba(139,92,246,.35)}
+.tag.pro{background:rgba(244,114,182,.15);color:#f9a8d4;border-color:rgba(244,114,182,.5)}
 .count{font-size:13px;color:var(--muted);font-weight:700}.count b{color:var(--gold)}
 .pro{margin-top:34px;padding:24px 26px;max-width:1200px}
 .pro h2{font-size:26px;font-weight:900}.pro p{color:#cbd5e1;margin-top:4px}
