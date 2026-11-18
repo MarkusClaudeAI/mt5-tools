@@ -9,169 +9,230 @@
 </head>
 <body>
 <div class="grid-bg"></div>
-<a class="proband" href="https://www.mql5.com/en/users/1002966/seller" target="_blank" rel="noopener"><span data-en="Need more? Pro versions on MQL5 Market →" data-de="Mehr gebraucht? Pro-Versionen im MQL5 Market →">Need more? Pro versions on MQL5 Market →</span></a>
+<a class="proband" href="https://www.mql5.com/en/users/1002966/seller" target="_blank" rel="noopener"><span data-i18n="band">Need more? Pro versions on MQL5 Market →</span></a>
+<div class="herowrap"><canvas id="net" aria-hidden="true"></canvas>
 <header class="top">
   <div class="brand"><div class="mark"><span>MT5</span></div><div class="nm">MT5 Tools Studio<small>FREE TOOLS</small></div></div>
-  <div class="lang"><button id="l-en" class="on">EN</button><button id="l-de">DE</button></div>
+  <div class="lang"><button data-l="en" class="on">EN</button><button data-l="de">DE</button><button data-l="es">ES</button><button data-l="pt">PT</button></div>
 </header>
 <section class="hero">
-  <h1 data-en="Free tools for MetaTrader 5" data-de="Kostenlose Tools für MetaTrader 5">Free tools for MetaTrader 5</h1>
-  <p data-en="14 indicators and utilities, free to download as .ex5 files. No account, no sign-up, no time limit." data-de="14 Indikatoren und Werkzeuge, kostenlos als .ex5-Datei. Kein Konto, keine Anmeldung, kein Zeitlimit.">14 indicators and utilities, free to download as .ex5 files. No account, no sign-up, no time limit.</p>
+  <h1 data-i18n="h1">Free tools for MetaTrader 5</h1>
+  <p data-i18n="lead">14 indicators and utilities, free to download as .ex5 files. No account, no sign-up, no time limit.</p>
+  <div class="herogrid">
   <div class="howto card">
-    <b data-en="How to install" data-de="Installation">How to install</b>
-    <ol>
-      <li data-en="MetaTrader 5: File &gt; Open Data Folder." data-de="MetaTrader 5: Datei &gt; Dateiordner öffnen.">MetaTrader 5: File &gt; Open Data Folder.</li>
-      <li data-en="Copy indicators to MQL5\Indicators, Expert Advisors to MQL5\Experts." data-de="Indikatoren nach MQL5\Indicators, Expert Advisors nach MQL5\Experts kopieren.">Copy indicators to MQL5\Indicators, Expert Advisors to MQL5\Experts.</li>
-      <li data-en="Restart MT5 or right-click Navigator &gt; Refresh, then drag the tool onto a chart." data-de="MT5 neu starten oder im Navigator Rechtsklick &gt; Aktualisieren, dann auf den Chart ziehen.">Restart MT5 or right-click Navigator &gt; Refresh, then drag the tool onto a chart.</li>
-    </ol>
+    <b data-i18n="howto">How to install</b>
+    <ol><li data-i18n="i1">MetaTrader 5: File &gt; Open Data Folder.</li><li data-i18n="i2">Copy indicators to MQL5\Indicators, Expert Advisors to MQL5\Experts.</li><li data-i18n="i3">Restart MT5 or right-click Navigator &gt; Refresh, then drag the tool onto a chart.</li></ol>
+  </div>
+  <div class="rank card" id="rank"><b><span class="crown">♛</span> <span data-i18n="rank">Most downloaded</span></b><ol id="ranklist"></ol><p class="muted" id="rank0" data-i18n="rank0" hidden>No downloads counted yet – be the first.</p></div>
   </div>
 </section>
+</div>
 <main class="tools">
 
-<article class="card tool">
+<article class="card tool" id="t-Zonecraft_Structure">
   <div class="head"><img class="logo" src="assets/logos/Zonecraft_Structure.png" alt="Zonecraft Structure logo" width="88" height="88">
-    <div><h3>Zonecraft Structure</h3><div class="meta"><span class="tag free">FREE</span><span class="tag">Indicator</span><span class="tag ver">v2.3</span></div></div></div>
-  <p data-en="Draws swing market structure (BOS / CHoCH) and fair value gaps with their fill level, plus a small dashboard. Calculated from closed candles only." data-de="Zeichnet Marktstruktur (BOS / CHoCH) und Fair Value Gaps mit Füllstand, dazu ein kleines Dashboard. Nur aus geschlossenen Kerzen berechnet.">Draws swing market structure (BOS / CHoCH) and fair value gaps with their fill level, plus a small dashboard. Calculated from closed candles only.</p>
+    <div><h3>Zonecraft Structure</h3><div class="meta"><span class="tag free">FREE</span><span class="tag" data-i18n="k_Indicator">Indicator</span><span class="tag ver">v2.3</span></div></div></div>
+  <p data-i18n="d0">Draws swing market structure (BOS / CHoCH) and fair value gaps with their fill level, plus a small dashboard. Calculated from closed candles only.</p>
   <a class="shot" href="assets/shots/Zonecraft_Structure.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/shots/Zonecraft_Structure.jpg" alt="Zonecraft Structure screenshot"></a>
-  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Zonecraft_Structure.ex5" data-asset="Zonecraft_Structure.ex5"><span data-en="Download .ex5" data-de=".ex5 herunterladen">Download .ex5</span> <small>119 KB</small></a>
+  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Zonecraft_Structure.ex5"><span data-i18n="dl">Download .ex5</span> <small>119 KB</small></a>
   <span class="count" data-asset="Zonecraft_Structure.ex5"></span></div>
-  <a class="prolink" href="https://www.mql5.com/en/market/product/208539" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-en="Pro version: Zonecraft SMC Suite – more features → MQL5 Market" data-de="Pro-Version: Zonecraft SMC Suite – mehr Funktionen → MQL5 Market">Pro version: Zonecraft SMC Suite – more features → MQL5 Market</span></a>
+  <details class="new"><summary><span data-i18n="new">What's new</span> · v2.2</summary><p data-i18n="n0">Small one-time thank-you line in the Journal (can be turned off). No change to the functions.</p>
+    <a href="https://github.com/MarkusClaudeAI/mt5-tools" target="_blank" rel="noopener" data-i18n="watch">Watch releases on GitHub to get updates</a></details>
+  <a class="prolink" href="https://www.mql5.com/en/market/product/208539" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-i18n="p0">Pro version: Zonecraft SMC Suite – more features → MQL5 Market</span></a>
+  <button class="pv" data-clip="Zonecraft" data-i18n="preview">▶ Pro version in action (7 s)</button>
+  <video class="clip" muted loop playsinline preload="none" poster="assets/clips/Zonecraft.jpg" hidden><source src="assets/clips/Zonecraft.webm" type="video/webm"></video>
 </article>
-<article class="card tool">
+<article class="card tool" id="t-Sweepwell_One">
   <div class="head"><img class="logo" src="assets/logos/Sweepwell_One.png" alt="Sweepwell One logo" width="88" height="88">
-    <div><h3>Sweepwell One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag">Indicator</span><span class="tag ver">v1.03</span></div></div></div>
-  <p data-en="Marks resting liquidity (equal highs / lows, previous day high / low) and shows when it is swept, with a strength of 1 to 3 dots." data-de="Markiert Liquidität (Equal Highs / Lows, Vortageshoch / -tief) und zeigt, wann sie abgeholt wird – mit Stärke 1 bis 3 Punkte.">Marks resting liquidity (equal highs / lows, previous day high / low) and shows when it is swept, with a strength of 1 to 3 dots.</p>
+    <div><h3>Sweepwell One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag" data-i18n="k_Indicator">Indicator</span><span class="tag ver">v1.03</span></div></div></div>
+  <p data-i18n="d1">Marks resting liquidity (equal highs / lows, previous day high / low) and shows when it is swept, with a strength of 1 to 3 dots.</p>
   <a class="shot" href="assets/shots/Sweepwell_One.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/shots/Sweepwell_One.jpg" alt="Sweepwell One screenshot"></a>
-  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Sweepwell_One.ex5" data-asset="Sweepwell_One.ex5"><span data-en="Download .ex5" data-de=".ex5 herunterladen">Download .ex5</span> <small>112 KB</small></a>
+  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Sweepwell_One.ex5"><span data-i18n="dl">Download .ex5</span> <small>112 KB</small></a>
   <span class="count" data-asset="Sweepwell_One.ex5"></span></div>
-  <a class="prolink" href="https://www.mql5.com/en/market/product/208744" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-en="Pro version: Sweepwell ICT Liquidity Suite – more features → MQL5 Market" data-de="Pro-Version: Sweepwell ICT Liquidity Suite – mehr Funktionen → MQL5 Market">Pro version: Sweepwell ICT Liquidity Suite – more features → MQL5 Market</span></a>
+  <details class="new"><summary><span data-i18n="new">What's new</span> · v1.02</summary><p data-i18n="n1">Removed artificial limits: the note card about another edition is gone; everything shown is fully usable.</p>
+    <a href="https://github.com/MarkusClaudeAI/mt5-tools" target="_blank" rel="noopener" data-i18n="watch">Watch releases on GitHub to get updates</a></details>
+  <a class="prolink" href="https://www.mql5.com/en/market/product/208744" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-i18n="p1">Pro version: Sweepwell ICT Liquidity Suite – more features → MQL5 Market</span></a>
+  <button class="pv" data-clip="Sweepwell" data-i18n="preview">▶ Pro version in action (7 s)</button>
+  <video class="clip" muted loop playsinline preload="none" poster="assets/clips/Sweepwell.jpg" hidden><source src="assets/clips/Sweepwell.webm" type="video/webm"></video>
 </article>
-<article class="card tool">
+<article class="card tool" id="t-Anchorline_One">
   <div class="head"><img class="logo" src="assets/logos/Anchorline_One.png" alt="Anchorline One logo" width="88" height="88">
-    <div><h3>Anchorline One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag">Indicator</span><span class="tag ver">v1.03</span></div></div></div>
-  <p data-en="One anchored VWAP with a ±1 standard deviation band. Anchor it to the start of the day, week, month or the last swing high / low." data-de="Ein verankerter VWAP mit ±1-Standardabweichungsband. Anker: Tages-, Wochen-, Monatsbeginn oder letztes Swing-Hoch / -Tief.">One anchored VWAP with a ±1 standard deviation band. Anchor it to the start of the day, week, month or the last swing high / low.</p>
+    <div><h3>Anchorline One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag" data-i18n="k_Indicator">Indicator</span><span class="tag ver">v1.03</span></div></div></div>
+  <p data-i18n="d2">One anchored VWAP with a ±1 standard deviation band. Anchor it to the start of the day, week, month or the last swing high / low.</p>
   <a class="shot" href="assets/shots/Anchorline_One.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/shots/Anchorline_One.jpg" alt="Anchorline One screenshot"></a>
-  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Anchorline_One.ex5" data-asset="Anchorline_One.ex5"><span data-en="Download .ex5" data-de=".ex5 herunterladen">Download .ex5</span> <small>77 KB</small></a>
+  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Anchorline_One.ex5"><span data-i18n="dl">Download .ex5</span> <small>77 KB</small></a>
   <span class="count" data-asset="Anchorline_One.ex5"></span></div>
-  <a class="prolink" href="https://www.mql5.com/en/market/product/208625" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-en="Pro version: Anchorline Anchored VWAP – more features → MQL5 Market" data-de="Pro-Version: Anchorline Anchored VWAP – mehr Funktionen → MQL5 Market">Pro version: Anchorline Anchored VWAP – more features → MQL5 Market</span></a>
+  <details class="new"><summary><span data-i18n="new">What's new</span> · v1.02</summary><p data-i18n="n2">Removed artificial limits: the note card about other features is gone from the panel.</p>
+    <a href="https://github.com/MarkusClaudeAI/mt5-tools" target="_blank" rel="noopener" data-i18n="watch">Watch releases on GitHub to get updates</a></details>
+  <a class="prolink" href="https://www.mql5.com/en/market/product/208625" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-i18n="p2">Pro version: Anchorline Anchored VWAP – more features → MQL5 Market</span></a>
+  <button class="pv" data-clip="Anchorline" data-i18n="preview">▶ Pro version in action (7 s)</button>
+  <video class="clip" muted loop playsinline preload="none" poster="assets/clips/Anchorline.jpg" hidden><source src="assets/clips/Anchorline.webm" type="video/webm"></video>
 </article>
-<article class="card tool">
+<article class="card tool" id="t-Tideline_Core_Free">
   <div class="head"><img class="logo" src="assets/logos/Tideline_Core.png" alt="Tideline Core logo" width="88" height="88">
-    <div><h3>Tideline Core</h3><div class="meta"><span class="tag free">FREE</span><span class="tag">Indicator</span><span class="tag ver">v1.02</span></div></div></div>
-  <p data-en="Currency strength of the 8 major currencies from the 28 major and cross pairs, with an open formula and a ranking panel." data-de="Währungsstärke der 8 Hauptwährungen aus den 28 Haupt- und Kreuzpaaren, mit offener Formel und Ranglisten-Panel.">Currency strength of the 8 major currencies from the 28 major and cross pairs, with an open formula and a ranking panel.</p>
+    <div><h3>Tideline Core</h3><div class="meta"><span class="tag free">FREE</span><span class="tag" data-i18n="k_Indicator">Indicator</span><span class="tag ver">v1.02</span></div></div></div>
+  <p data-i18n="d3">Currency strength of the 8 major currencies from the 28 major and cross pairs, with an open formula and a ranking panel.</p>
   <a class="shot" href="assets/shots/Tideline_Core.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/shots/Tideline_Core.jpg" alt="Tideline Core screenshot"></a>
-  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Tideline_Core_Free.ex5" data-asset="Tideline_Core_Free.ex5"><span data-en="Download .ex5" data-de=".ex5 herunterladen">Download .ex5</span> <small>72 KB</small></a>
+  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Tideline_Core_Free.ex5"><span data-i18n="dl">Download .ex5</span> <small>72 KB</small></a>
   <span class="count" data-asset="Tideline_Core_Free.ex5"></span></div>
-  <a class="prolink" href="https://www.mql5.com/en/market/product/208628" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-en="Pro version: Tideline Currency Strength – more features → MQL5 Market" data-de="Pro-Version: Tideline Currency Strength – mehr Funktionen → MQL5 Market">Pro version: Tideline Currency Strength – more features → MQL5 Market</span></a>
+  <details class="new"><summary><span data-i18n="new">What's new</span> · v1.02</summary><p data-i18n="n3">Removed artificial limits: the panel header no longer shows a teaser for features that are not included.</p>
+    <a href="https://github.com/MarkusClaudeAI/mt5-tools" target="_blank" rel="noopener" data-i18n="watch">Watch releases on GitHub to get updates</a></details>
+  <a class="prolink" href="https://www.mql5.com/en/market/product/208628" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-i18n="p3">Pro version: Tideline Currency Strength – more features → MQL5 Market</span></a>
+  <button class="pv" data-clip="Tideline" data-i18n="preview">▶ Pro version in action (7 s)</button>
+  <video class="clip" muted loop playsinline preload="none" poster="assets/clips/Tideline.jpg" hidden><source src="assets/clips/Tideline.webm" type="video/webm"></video>
 </article>
-<article class="card tool">
+<article class="card tool" id="t-Daymark_Session_Timer">
   <div class="head"><img class="logo" src="assets/logos/Daymark_Session_Timer.png" alt="Daymark Session Timer logo" width="88" height="88">
-    <div><h3>Daymark Session Timer</h3><div class="meta"><span class="tag free">FREE</span><span class="tag">Indicator</span><span class="tag ver">v1.11</span></div></div></div>
-  <p data-en="Candle-close countdown, the Sydney / Tokyo / London / New York sessions as soft boxes and the previous day high and low in one light indicator." data-de="Countdown bis Kerzenschluss, die Sessions Sydney / Tokio / London / New York als Boxen und Vortageshoch / -tief in einem leichten Indikator.">Candle-close countdown, the Sydney / Tokyo / London / New York sessions as soft boxes and the previous day high and low in one light indicator.</p>
+    <div><h3>Daymark Session Timer</h3><div class="meta"><span class="tag free">FREE</span><span class="tag" data-i18n="k_Indicator">Indicator</span><span class="tag ver">v1.11</span></div></div></div>
+  <p data-i18n="d4">Candle-close countdown, the Sydney / Tokyo / London / New York sessions as soft boxes and the previous day high and low in one light indicator.</p>
   <a class="shot" href="assets/shots/Daymark_Session_Timer.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/shots/Daymark_Session_Timer.jpg" alt="Daymark Session Timer screenshot"></a>
-  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Daymark_Session_Timer.ex5" data-asset="Daymark_Session_Timer.ex5"><span data-en="Download .ex5" data-de=".ex5 herunterladen">Download .ex5</span> <small>89 KB</small></a>
+  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Daymark_Session_Timer.ex5"><span data-i18n="dl">Download .ex5</span> <small>89 KB</small></a>
   <span class="count" data-asset="Daymark_Session_Timer.ex5"></span></div>
-  <a class="prolink" href="https://www.mql5.com/en/market/product/208483" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-en="Pro version: Daymark Chart Companion – more features → MQL5 Market" data-de="Pro-Version: Daymark Chart Companion – mehr Funktionen → MQL5 Market">Pro version: Daymark Chart Companion – more features → MQL5 Market</span></a>
+  <details class="new"><summary><span data-i18n="new">What's new</span> · v1.11</summary><p data-i18n="n4">Small one-time thank-you line in the Journal (can be turned off). No change to the functions.</p>
+    <a href="https://github.com/MarkusClaudeAI/mt5-tools" target="_blank" rel="noopener" data-i18n="watch">Watch releases on GitHub to get updates</a></details>
+  <a class="prolink" href="https://www.mql5.com/en/market/product/208483" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-i18n="p4">Pro version: Daymark Chart Companion – more features → MQL5 Market</span></a>
+  <button class="pv" data-clip="Daymark" data-i18n="preview">▶ Pro version in action (7 s)</button>
+  <video class="clip" muted loop playsinline preload="none" poster="assets/clips/Daymark.jpg" hidden><source src="assets/clips/Daymark.webm" type="video/webm"></video>
 </article>
-<article class="card tool">
+<article class="card tool" id="t-Fibrelay_One">
   <div class="head"><img class="logo" src="assets/logos/Fibrelay_One.png" alt="Fibrelay One logo" width="88" height="88">
-    <div><h3>Fibrelay One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag">Indicator</span><span class="tag ver">v1.00</span></div></div></div>
-  <p data-en="Draws the Fibonacci of the last impulse wave automatically after every break of structure, including the OTE zone and the 50 % line." data-de="Zeichnet nach jedem Strukturbruch automatisch das Fibonacci der letzten Impulswelle, mit OTE-Zone und 50-%-Linie.">Draws the Fibonacci of the last impulse wave automatically after every break of structure, including the OTE zone and the 50 % line.</p>
+    <div><h3>Fibrelay One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag" data-i18n="k_Indicator">Indicator</span><span class="tag ver">v1.00</span></div></div></div>
+  <p data-i18n="d5">Draws the Fibonacci of the last impulse wave automatically after every break of structure, including the OTE zone and the 50 % line.</p>
   <a class="shot" href="assets/shots/Fibrelay_One.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/shots/Fibrelay_One.jpg" alt="Fibrelay One screenshot"></a>
-  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Fibrelay_One.ex5" data-asset="Fibrelay_One.ex5"><span data-en="Download .ex5" data-de=".ex5 herunterladen">Download .ex5</span> <small>92 KB</small></a>
+  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Fibrelay_One.ex5"><span data-i18n="dl">Download .ex5</span> <small>92 KB</small></a>
   <span class="count" data-asset="Fibrelay_One.ex5"></span></div>
-  <a class="prolink" href="https://www.mql5.com/en/market/product/209249" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-en="Pro version: Fibrelay OTE Fibonacci – more features → MQL5 Market" data-de="Pro-Version: Fibrelay OTE Fibonacci – mehr Funktionen → MQL5 Market">Pro version: Fibrelay OTE Fibonacci – more features → MQL5 Market</span></a>
+  <details class="new"><summary><span data-i18n="new">What's new</span> · v1.00</summary><p data-i18n="n5">First release.</p>
+    <a href="https://github.com/MarkusClaudeAI/mt5-tools" target="_blank" rel="noopener" data-i18n="watch">Watch releases on GitHub to get updates</a></details>
+  <a class="prolink" href="https://www.mql5.com/en/market/product/209249" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-i18n="p5">Pro version: Fibrelay OTE Fibonacci – more features → MQL5 Market</span></a>
+  <button class="pv" data-clip="Fibrelay" data-i18n="preview">▶ Pro version in action (7 s)</button>
+  <video class="clip" muted loop playsinline preload="none" poster="assets/clips/Fibrelay.jpg" hidden><source src="assets/clips/Fibrelay.webm" type="video/webm"></video>
 </article>
-<article class="card tool">
+<article class="card tool" id="t-Scoutmark_One">
   <div class="head"><img class="logo" src="assets/logos/Scoutmark_One.png" alt="Scoutmark One logo" width="88" height="88">
-    <div><h3>Scoutmark One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag">Indicator</span><span class="tag ver">v1.02</span></div></div></div>
-  <p data-en="Shows the smart money structure of up to 30 symbols on H1 and H4 in one small table: last swing break, nearby FVG and order blocks." data-de="Zeigt die Smart-Money-Struktur von bis zu 30 Symbolen auf H1 und H4 in einer kleinen Tabelle: letzter Strukturbruch, nahe FVG und Order Blocks.">Shows the smart money structure of up to 30 symbols on H1 and H4 in one small table: last swing break, nearby FVG and order blocks.</p>
+    <div><h3>Scoutmark One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag" data-i18n="k_Indicator">Indicator</span><span class="tag ver">v1.02</span></div></div></div>
+  <p data-i18n="d6">Shows the smart money structure of up to 30 symbols on H1 and H4 in one small table: last swing break, nearby FVG and order blocks.</p>
   <a class="shot" href="assets/shots/Scoutmark_One.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/shots/Scoutmark_One.jpg" alt="Scoutmark One screenshot"></a>
-  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Scoutmark_One.ex5" data-asset="Scoutmark_One.ex5"><span data-en="Download .ex5" data-de=".ex5 herunterladen">Download .ex5</span> <small>91 KB</small></a>
+  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Scoutmark_One.ex5"><span data-i18n="dl">Download .ex5</span> <small>91 KB</small></a>
   <span class="count" data-asset="Scoutmark_One.ex5"></span></div>
-  <a class="prolink" href="https://www.mql5.com/en/market/product/208928" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-en="Pro version: Scoutmark SMC Scanner – more features → MQL5 Market" data-de="Pro-Version: Scoutmark SMC Scanner – mehr Funktionen → MQL5 Market">Pro version: Scoutmark SMC Scanner – more features → MQL5 Market</span></a>
+  <details class="new"><summary><span data-i18n="new">What's new</span> · v1.02</summary><p data-i18n="n6">Symbol list freely selectable (up to 30 symbols, shown in pages) instead of a fixed maximum of 4.</p>
+    <a href="https://github.com/MarkusClaudeAI/mt5-tools" target="_blank" rel="noopener" data-i18n="watch">Watch releases on GitHub to get updates</a></details>
+  <a class="prolink" href="https://www.mql5.com/en/market/product/208928" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-i18n="p6">Pro version: Scoutmark SMC Scanner – more features → MQL5 Market</span></a>
+  <button class="pv" data-clip="Scoutmark" data-i18n="preview">▶ Pro version in action (7 s)</button>
+  <video class="clip" muted loop playsinline preload="none" poster="assets/clips/Scoutmark.jpg" hidden><source src="assets/clips/Scoutmark.webm" type="video/webm"></video>
 </article>
-<article class="card tool">
+<article class="card tool" id="t-Stratamark_One">
   <div class="head"><img class="logo" src="assets/logos/Stratamark_One.png" alt="Stratamark One logo" width="88" height="88">
-    <div><h3>Stratamark One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag">Indicator</span><span class="tag ver">v1.00</span></div></div></div>
-  <p data-en="Daily volume profile next to the candles for the last 1–5 days: point of control, value area high / low and a gradient histogram." data-de="Tages-Volumenprofil neben den Kerzen für die letzten 1–5 Tage: Point of Control, Value Area High / Low und Verlaufs-Histogramm.">Daily volume profile next to the candles for the last 1–5 days: point of control, value area high / low and a gradient histogram.</p>
+    <div><h3>Stratamark One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag" data-i18n="k_Indicator">Indicator</span><span class="tag ver">v1.00</span></div></div></div>
+  <p data-i18n="d7">Daily volume profile next to the candles for the last 1–5 days: point of control, value area high / low and a gradient histogram.</p>
   <a class="shot" href="assets/shots/Stratamark_One.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/shots/Stratamark_One.jpg" alt="Stratamark One screenshot"></a>
-  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Stratamark_One.ex5" data-asset="Stratamark_One.ex5"><span data-en="Download .ex5" data-de=".ex5 herunterladen">Download .ex5</span> <small>40 KB</small></a>
+  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Stratamark_One.ex5"><span data-i18n="dl">Download .ex5</span> <small>40 KB</small></a>
   <span class="count" data-asset="Stratamark_One.ex5"></span></div>
-  <a class="prolink" href="https://www.mql5.com/en/market/product/209152" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-en="Pro version: Stratamark Volume Profile – more features → MQL5 Market" data-de="Pro-Version: Stratamark Volume Profile – mehr Funktionen → MQL5 Market">Pro version: Stratamark Volume Profile – more features → MQL5 Market</span></a>
+  <details class="new"><summary><span data-i18n="new">What's new</span> · v1.00</summary><p data-i18n="n7">First release: day volume profile with POC and value area, 1-5 days.</p>
+    <a href="https://github.com/MarkusClaudeAI/mt5-tools" target="_blank" rel="noopener" data-i18n="watch">Watch releases on GitHub to get updates</a></details>
+  <a class="prolink" href="https://www.mql5.com/en/market/product/209152" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-i18n="p7">Pro version: Stratamark Volume Profile – more features → MQL5 Market</span></a>
+  <button class="pv" data-clip="Stratamark" data-i18n="preview">▶ Pro version in action (7 s)</button>
+  <video class="clip" muted loop playsinline preload="none" poster="assets/clips/Stratamark.jpg" hidden><source src="assets/clips/Stratamark.webm" type="video/webm"></video>
 </article>
-<article class="card tool">
+<article class="card tool" id="t-Fleetdeck_Lite">
   <div class="head"><img class="logo" src="assets/logos/Fleetdeck_Account_Overview.png" alt="Fleetdeck Account Overview logo" width="88" height="88">
-    <div><h3>Fleetdeck Account Overview</h3><div class="meta"><span class="tag free">FREE</span><span class="tag">Expert Advisor (read only)</span><span class="tag ver">v1.02</span></div></div></div>
-  <p data-en="All MT5 accounts on your computer in one panel: equity, profit of day and week, open profit and a traffic light per account. Read only, never trades." data-de="Alle MT5-Konten auf deinem Rechner in einem Panel: Equity, Tages- und Wochengewinn, offener Gewinn und eine Ampel je Konto. Nur lesend, handelt nie.">All MT5 accounts on your computer in one panel: equity, profit of day and week, open profit and a traffic light per account. Read only, never trades.</p>
-  
-  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Fleetdeck_Lite.ex5" data-asset="Fleetdeck_Lite.ex5"><span data-en="Download .ex5" data-de=".ex5 herunterladen">Download .ex5</span> <small>101 KB</small></a>
+    <div><h3>Fleetdeck Account Overview</h3><div class="meta"><span class="tag free">FREE</span><span class="tag" data-i18n="k_Expert Advisor (read only)">EA · read only</span><span class="tag ver">v1.02</span></div></div></div>
+  <p data-i18n="d8">All MT5 accounts on your computer in one panel: equity, profit of day and week, open profit and a traffic light per account. Read only, never trades.</p>
+  <div class="shot noimg"><img loading="lazy" src="assets/logos/Fleetdeck_Account_Overview.png" alt=""></div>
+  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Fleetdeck_Lite.ex5"><span data-i18n="dl">Download .ex5</span> <small>101 KB</small></a>
   <span class="count" data-asset="Fleetdeck_Lite.ex5"></span></div>
-  <a class="prolink" href="https://www.mql5.com/en/market/product/208444" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-en="Pro version: Fleetdeck Multi Account Monitor – more features → MQL5 Market" data-de="Pro-Version: Fleetdeck Multi Account Monitor – mehr Funktionen → MQL5 Market">Pro version: Fleetdeck Multi Account Monitor – more features → MQL5 Market</span></a>
+  <details class="new"><summary><span data-i18n="new">What's new</span> · v1.02</summary><p data-i18n="n8">All accounts are shown instead of only 3; the footer hint is gone.</p>
+    <a href="https://github.com/MarkusClaudeAI/mt5-tools" target="_blank" rel="noopener" data-i18n="watch">Watch releases on GitHub to get updates</a></details>
+  <a class="prolink" href="https://www.mql5.com/en/market/product/208444" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-i18n="p8">Pro version: Fleetdeck Multi Account Monitor – more features → MQL5 Market</span></a>
+  <button class="pv" data-clip="Fleetdeck" data-i18n="preview">▶ Pro version in action (7 s)</button>
+  <video class="clip" muted loop playsinline preload="none" poster="assets/clips/Fleetdeck.jpg" hidden><source src="assets/clips/Fleetdeck.webm" type="video/webm"></video>
 </article>
-<article class="card tool">
+<article class="card tool" id="t-MagicAtlasJournal_Lite">
   <div class="head"><img class="logo" src="assets/logos/Magic_Atlas_Snapshot.png" alt="Magic Atlas Snapshot logo" width="88" height="88">
-    <div><h3>Magic Atlas Snapshot</h3><div class="meta"><span class="tag free">FREE</span><span class="tag">Expert Advisor (read only)</span><span class="tag ver">v1.02</span></div></div></div>
-  <p data-en="Reads the closed positions of your account and shows net profit, win rate, profit factor, drawdown and expectancy for each EA (magic number)." data-de="Liest die geschlossenen Positionen deines Kontos und zeigt Nettogewinn, Trefferquote, Profit-Faktor, Drawdown und Erwartungswert je EA (Magic-Nummer).">Reads the closed positions of your account and shows net profit, win rate, profit factor, drawdown and expectancy for each EA (magic number).</p>
-  
-  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/MagicAtlasJournal_Lite.ex5" data-asset="MagicAtlasJournal_Lite.ex5"><span data-en="Download .ex5" data-de=".ex5 herunterladen">Download .ex5</span> <small>121 KB</small></a>
+    <div><h3>Magic Atlas Snapshot</h3><div class="meta"><span class="tag free">FREE</span><span class="tag" data-i18n="k_Expert Advisor (read only)">EA · read only</span><span class="tag ver">v1.02</span></div></div></div>
+  <p data-i18n="d9">Reads the closed positions of your account and shows net profit, win rate, profit factor, drawdown and expectancy for each EA (magic number).</p>
+  <div class="shot noimg"><img loading="lazy" src="assets/logos/Magic_Atlas_Snapshot.png" alt=""></div>
+  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/MagicAtlasJournal_Lite.ex5"><span data-i18n="dl">Download .ex5</span> <small>121 KB</small></a>
   <span class="count" data-asset="MagicAtlasJournal_Lite.ex5"></span></div>
-  <a class="prolink" href="https://www.mql5.com/en/market/product/208440" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-en="Pro version: Magic Atlas Journal – more features → MQL5 Market" data-de="Pro-Version: Magic Atlas Journal – mehr Funktionen → MQL5 Market">Pro version: Magic Atlas Journal – more features → MQL5 Market</span></a>
+  <details class="new"><summary><span data-i18n="new">What's new</span> · v1.02</summary><p data-i18n="n9">All EAs (magic numbers) are analysed instead of only 3; greyed-out tabs and the locked CSV button are gone.</p>
+    <a href="https://github.com/MarkusClaudeAI/mt5-tools" target="_blank" rel="noopener" data-i18n="watch">Watch releases on GitHub to get updates</a></details>
+  <a class="prolink" href="https://www.mql5.com/en/market/product/208440" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-i18n="p9">Pro version: Magic Atlas Journal – more features → MQL5 Market</span></a>
+  <button class="pv" data-clip="MagicAtlas" data-i18n="preview">▶ Pro version in action (7 s)</button>
+  <video class="clip" muted loop playsinline preload="none" poster="assets/clips/MagicAtlas.jpg" hidden><source src="assets/clips/MagicAtlas.webm" type="video/webm"></video>
 </article>
-<article class="card tool">
+<article class="card tool" id="t-Pilotdeck_Lite">
   <div class="head"><img class="logo" src="assets/logos/Pilotdeck_One.png" alt="Pilotdeck One logo" width="88" height="88">
-    <div><h3>Pilotdeck One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag">Expert Advisor (manual trading)</span><span class="tag ver">v1.02</span></div></div></div>
-  <p data-en="Risk calculator and one-click trade panel: drag Entry, SL and TP lines, see lot size, money, percent and R:R live, then send the order with one click." data-de="Risikorechner und Ein-Klick-Handelspanel: Entry-, SL- und TP-Linien ziehen, Lot, Geld, Prozent und CRV live sehen, Order mit einem Klick senden.">Risk calculator and one-click trade panel: drag Entry, SL and TP lines, see lot size, money, percent and R:R live, then send the order with one click.</p>
+    <div><h3>Pilotdeck One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag" data-i18n="k_Expert Advisor (manual trading)">EA · manual trading</span><span class="tag ver">v1.02</span></div></div></div>
+  <p data-i18n="d10">Risk calculator and one-click trade panel: drag Entry, SL and TP lines, see lot size, money, percent and R:R live, then send the order with one click.</p>
   <a class="shot" href="assets/shots/Pilotdeck_One.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/shots/Pilotdeck_One.jpg" alt="Pilotdeck One screenshot"></a>
-  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Pilotdeck_Lite.ex5" data-asset="Pilotdeck_Lite.ex5"><span data-en="Download .ex5" data-de=".ex5 herunterladen">Download .ex5</span> <small>195 KB</small></a>
+  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Pilotdeck_Lite.ex5"><span data-i18n="dl">Download .ex5</span> <small>195 KB</small></a>
   <span class="count" data-asset="Pilotdeck_Lite.ex5"></span></div>
-  <a class="prolink" href="https://www.mql5.com/en/market/product/208699" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-en="Pro version: Pilotdeck Trade Manager – more features → MQL5 Market" data-de="Pro-Version: Pilotdeck Trade Manager – mehr Funktionen → MQL5 Market">Pro version: Pilotdeck Trade Manager – more features → MQL5 Market</span></a>
+  <details class="new"><summary><span data-i18n="new">What's new</span> · v1.02</summary><p data-i18n="n10">The promotional card at the bottom of the panel is gone; all buttons shown are fully usable.</p>
+    <a href="https://github.com/MarkusClaudeAI/mt5-tools" target="_blank" rel="noopener" data-i18n="watch">Watch releases on GitHub to get updates</a></details>
+  <a class="prolink" href="https://www.mql5.com/en/market/product/208699" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-i18n="p10">Pro version: Pilotdeck Trade Manager – more features → MQL5 Market</span></a>
+  <button class="pv" data-clip="Pilotdeck" data-i18n="preview">▶ Pro version in action (7 s)</button>
+  <video class="clip" muted loop playsinline preload="none" poster="assets/clips/Pilotdeck.jpg" hidden><source src="assets/clips/Pilotdeck.webm" type="video/webm"></video>
 </article>
-<article class="card tool">
+<article class="card tool" id="t-Relaywire_Notify">
   <div class="head"><img class="logo" src="assets/logos/Relaywire_Notify.png" alt="Relaywire Notify logo" width="88" height="88">
-    <div><h3>Relaywire Notify</h3><div class="meta"><span class="tag free">FREE</span><span class="tag">Expert Advisor (notifications)</span><span class="tag ver">v1.02</span></div></div></div>
-  <p data-en="Sends the trade events of your account (opened, closed, partial close, SL / TP changes) to your own Telegram chat through your own bot. Reports only." data-de="Sendet die Trade-Ereignisse deines Kontos (eröffnet, geschlossen, Teilschließung, SL/TP-Änderung) über deinen eigenen Bot an deinen Telegram-Chat. Nur Meldungen.">Sends the trade events of your account (opened, closed, partial close, SL / TP changes) to your own Telegram chat through your own bot. Reports only.</p>
+    <div><h3>Relaywire Notify</h3><div class="meta"><span class="tag free">FREE</span><span class="tag" data-i18n="k_Expert Advisor (notifications)">EA · notifications</span><span class="tag ver">v1.02</span></div></div></div>
+  <p data-i18n="d11">Sends the trade events of your account (opened, closed, partial close, SL / TP changes) to your own Telegram chat through your own bot. Reports only.</p>
   <a class="shot" href="assets/shots/Relaywire_Notify.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/shots/Relaywire_Notify.jpg" alt="Relaywire Notify screenshot"></a>
-  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Relaywire_Notify.ex5" data-asset="Relaywire_Notify.ex5"><span data-en="Download .ex5" data-de=".ex5 herunterladen">Download .ex5</span> <small>143 KB</small></a>
+  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Relaywire_Notify.ex5"><span data-i18n="dl">Download .ex5</span> <small>143 KB</small></a>
   <span class="count" data-asset="Relaywire_Notify.ex5"></span></div>
-  <a class="prolink" href="https://www.mql5.com/en/market/product/208726" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-en="Pro version: Relaywire Telegram Bridge – more features → MQL5 Market" data-de="Pro-Version: Relaywire Telegram Bridge – mehr Funktionen → MQL5 Market">Pro version: Relaywire Telegram Bridge – more features → MQL5 Market</span></a>
+  <details class="new"><summary><span data-i18n="new">What's new</span> · v1.02</summary><p data-i18n="n11">The promotional card in the panel is gone.</p>
+    <a href="https://github.com/MarkusClaudeAI/mt5-tools" target="_blank" rel="noopener" data-i18n="watch">Watch releases on GitHub to get updates</a></details>
+  <a class="prolink" href="https://www.mql5.com/en/market/product/208726" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-i18n="p11">Pro version: Relaywire Telegram Bridge – more features → MQL5 Market</span></a>
+  <button class="pv" data-clip="Relaywire" data-i18n="preview">▶ Pro version in action (7 s)</button>
+  <video class="clip" muted loop playsinline preload="none" poster="assets/clips/Relaywire.jpg" hidden><source src="assets/clips/Relaywire.webm" type="video/webm"></video>
 </article>
-<article class="card tool">
+<article class="card tool" id="t-Rewindeck_One">
   <div class="head"><img class="logo" src="assets/logos/Rewindeck_One.png" alt="Rewindeck One logo" width="88" height="88">
-    <div><h3>Rewindeck One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag">Expert Advisor (Strategy Tester)</span><span class="tag ver">v1.12</span></div></div></div>
-  <p data-en="Practise manual trading in the visual Strategy Tester: pause the replay, set your lines with a click and press Buy or Sell." data-de="Manuelles Handeln im visuellen Strategietester üben: Replay pausieren, Linien per Klick setzen, Buy oder Sell drücken.">Practise manual trading in the visual Strategy Tester: pause the replay, set your lines with a click and press Buy or Sell.</p>
+    <div><h3>Rewindeck One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag" data-i18n="k_Expert Advisor (Strategy Tester)">EA · Strategy Tester</span><span class="tag ver">v1.12</span></div></div></div>
+  <p data-i18n="d12">Practise manual trading in the visual Strategy Tester: pause the replay, set your lines with a click and press Buy or Sell.</p>
   <a class="shot" href="assets/shots/Rewindeck_One.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/shots/Rewindeck_One.jpg" alt="Rewindeck One screenshot"></a>
-  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Rewindeck_One.ex5" data-asset="Rewindeck_One.ex5"><span data-en="Download .ex5" data-de=".ex5 herunterladen">Download .ex5</span> <small>238 KB</small></a>
+  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Rewindeck_One.ex5"><span data-i18n="dl">Download .ex5</span> <small>238 KB</small></a>
   <span class="count" data-asset="Rewindeck_One.ex5"></span></div>
-  <a class="prolink" href="https://www.mql5.com/en/market/product/208833" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-en="Pro version: Rewindeck Backtest Simulator – more features → MQL5 Market" data-de="Pro-Version: Rewindeck Backtest Simulator – mehr Funktionen → MQL5 Market">Pro version: Rewindeck Backtest Simulator – more features → MQL5 Market</span></a>
+  <details class="new"><summary><span data-i18n="new">What's new</span> · v1.12</summary><p data-i18n="n12">The promotional card at the bottom of the panel is gone; all buttons shown are fully usable.</p>
+    <a href="https://github.com/MarkusClaudeAI/mt5-tools" target="_blank" rel="noopener" data-i18n="watch">Watch releases on GitHub to get updates</a></details>
+  <a class="prolink" href="https://www.mql5.com/en/market/product/208833" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-i18n="p12">Pro version: Rewindeck Backtest Simulator – more features → MQL5 Market</span></a>
+  <button class="pv" data-clip="Rewindeck" data-i18n="preview">▶ Pro version in action (7 s)</button>
+  <video class="clip" muted loop playsinline preload="none" poster="assets/clips/Rewindeck.jpg" hidden><source src="assets/clips/Rewindeck.webm" type="video/webm"></video>
 </article>
-<article class="card tool">
+<article class="card tool" id="t-Twinlane_Copier_Lite">
   <div class="head"><img class="logo" src="assets/logos/Twinlane_Copier_One.png" alt="Twinlane Copier One logo" width="88" height="88">
-    <div><h3>Twinlane Copier One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag">Expert Advisor (copier)</span><span class="tag ver">v2.02</span></div></div></div>
-  <p data-en="Copies positions from one MT5 terminal to one other terminal on the same PC or VPS. No DLL, no web request, no passwords, no time limit." data-de="Kopiert Positionen von einem MT5-Terminal auf ein anderes auf demselben PC oder VPS. Keine DLL, keine Web-Anfrage, keine Passwörter, ohne Zeitlimit.">Copies positions from one MT5 terminal to one other terminal on the same PC or VPS. No DLL, no web request, no passwords, no time limit.</p>
+    <div><h3>Twinlane Copier One</h3><div class="meta"><span class="tag free">FREE</span><span class="tag" data-i18n="k_Expert Advisor (copier)">EA · copier</span><span class="tag ver">v2.02</span></div></div></div>
+  <p data-i18n="d13">Copies positions from one MT5 terminal to one other terminal on the same PC or VPS. No DLL, no web request, no passwords, no time limit.</p>
   <a class="shot" href="assets/shots/Twinlane_Copier_One.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/shots/Twinlane_Copier_One.jpg" alt="Twinlane Copier One screenshot"></a>
-  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Twinlane_Copier_Lite.ex5" data-asset="Twinlane_Copier_Lite.ex5"><span data-en="Download .ex5" data-de=".ex5 herunterladen">Download .ex5</span> <small>199 KB</small></a>
+  <div class="dl"><a class="btn" href="https://github.com/MarkusClaudeAI/mt5-tools/releases/download/v1.0/Twinlane_Copier_Lite.ex5"><span data-i18n="dl">Download .ex5</span> <small>199 KB</small></a>
   <span class="count" data-asset="Twinlane_Copier_Lite.ex5"></span></div>
-  <a class="prolink" href="https://www.mql5.com/en/market/product/208442" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-en="Pro version: Twinlane Copier – more features → MQL5 Market" data-de="Pro-Version: Twinlane Copier – mehr Funktionen → MQL5 Market">Pro version: Twinlane Copier – more features → MQL5 Market</span></a>
+  <details class="new"><summary><span data-i18n="new">What's new</span> · v2.02</summary><p data-i18n="n13">No more greyed-out controls with PRO tags; only what works is shown (lot factor, pause, disconnect all, log).</p>
+    <a href="https://github.com/MarkusClaudeAI/mt5-tools" target="_blank" rel="noopener" data-i18n="watch">Watch releases on GitHub to get updates</a></details>
+  <a class="prolink" href="https://www.mql5.com/en/market/product/208442" target="_blank" rel="noopener"><span class="tag pro">PRO</span> <span data-i18n="p13">Pro version: Twinlane Copier – more features → MQL5 Market</span></a>
+  <button class="pv" data-clip="Twinlane" data-i18n="preview">▶ Pro version in action (7 s)</button>
+  <video class="clip" muted loop playsinline preload="none" poster="assets/clips/Twinlane.jpg" hidden><source src="assets/clips/Twinlane.webm" type="video/webm"></video>
 </article>
 </main>
+<section class="live card">
+  <div class="livehead"><span class="dot"></span><h2 data-i18n="live">Signal-Check LIVE</h2></div>
+  <p data-i18n="livetxt">Our YouTube live stream with the tools on real charts. If no stream is running, YouTube shows a notice instead.</p>
+  <div class="ytbox" id="ytbox"><button class="btn alt" id="ytload" data-i18n="liveload">▶ Load live stream (YouTube)</button><small data-i18n="livepriv">Loading connects to YouTube (Google). Nothing is loaded before you click.</small></div>
+</section>
 <section class="pro card">
-  <h2 data-en="Pro versions on MQL5 Market" data-de="Pro-Versionen im MQL5 Market">Pro versions on MQL5 Market</h2>
-  <p data-en="Most free tools have a larger Pro edition with more features. You find them in our seller profile on MQL5 Market." data-de="Die meisten Gratis-Tools haben eine größere Pro-Version mit mehr Funktionen. Du findest sie in unserem Verkäuferprofil im MQL5 Market.">Most free tools have a larger Pro edition with more features. You find them in our seller profile on MQL5 Market.</p>
-  <a class="btn alt" href="https://www.mql5.com/en/users/1002966/seller" target="_blank" rel="noopener" data-en="Open MQL5 seller profile" data-de="MQL5-Verkäuferprofil öffnen">Open MQL5 seller profile</a>
+  <h2 data-i18n="prohead">Pro versions on MQL5 Market</h2>
+  <p data-i18n="protxt">Every free tool has a larger Pro edition with more features. You find them in our seller profile on MQL5 Market.</p>
+  <a class="btn alt" href="https://www.mql5.com/en/users/1002966/seller" target="_blank" rel="noopener" data-i18n="probtn">Open MQL5 seller profile</a>
+  <a class="btn ghost" href="https://github.com/MarkusClaudeAI/mt5-tools/discussions" target="_blank" rel="noopener" data-i18n="fb">Request a feature / Feedback</a>
+  <p class="muted" data-i18n="fbtxt">Ideas, bugs, questions: write to us in GitHub Discussions.</p>
 </section>
-<section class="risk">
-  <p data-en="No profit promises. These are analysis and utility tools, not trading signals. Trading involves risk; you can lose money. Test every tool on a demo account first." data-de="Keine Gewinnversprechen. Das sind Analyse- und Hilfswerkzeuge, keine Handelssignale. Trading ist mit Risiko verbunden, Verluste sind möglich. Teste jedes Tool zuerst auf einem Demokonto.">No profit promises. These are analysis and utility tools, not trading signals. Trading involves risk; you can lose money. Test every tool on a demo account first.</p>
-</section>
+<section class="risk"><p data-i18n="risk">No profit promises. These are analysis and utility tools, not trading signals. Trading involves risk; you can lose money. Test every tool on a demo account first.</p></section>
 <footer>
   <span>© 2026 MT5 Tools Studio</span>
   <a href="impressum.html">Impressum</a>
-  <a href="datenschutz.html" data-en="Privacy (Datenschutz)" data-de="Datenschutz">Privacy (Datenschutz)</a>
+  <a href="datenschutz.html" data-i18n="priv">Privacy (Datenschutz)</a>
   <a href="https://github.com/MarkusClaudeAI/mt5-tools/releases" target="_blank" rel="noopener">GitHub Releases</a>
 </footer>
-<script>
-window.REPO_OWNER="MarkusClaudeAI"; window.REPO_NAME="mt5-tools";
-</script>
+<script>window.REPO_OWNER="MarkusClaudeAI";window.REPO_NAME="mt5-tools";window.NAMES={"Zonecraft_Structure.ex5": "Zonecraft Structure", "Sweepwell_One.ex5": "Sweepwell One", "Anchorline_One.ex5": "Anchorline One", "Tideline_Core_Free.ex5": "Tideline Core", "Daymark_Session_Timer.ex5": "Daymark Session Timer", "Fibrelay_One.ex5": "Fibrelay One", "Scoutmark_One.ex5": "Scoutmark One", "Stratamark_One.ex5": "Stratamark One", "Fleetdeck_Lite.ex5": "Fleetdeck Account Overview", "MagicAtlasJournal_Lite.ex5": "Magic Atlas Snapshot", "Pilotdeck_Lite.ex5": "Pilotdeck One", "Relaywire_Notify.ex5": "Relaywire Notify", "Rewindeck_One.ex5": "Rewindeck One", "Twinlane_Copier_Lite.ex5": "Twinlane Copier One"};window.LOGOS={"Zonecraft_Structure.ex5": "Zonecraft_Structure.png", "Sweepwell_One.ex5": "Sweepwell_One.png", "Anchorline_One.ex5": "Anchorline_One.png", "Tideline_Core_Free.ex5": "Tideline_Core.png", "Daymark_Session_Timer.ex5": "Daymark_Session_Timer.png", "Fibrelay_One.ex5": "Fibrelay_One.png", "Scoutmark_One.ex5": "Scoutmark_One.png", "Stratamark_One.ex5": "Stratamark_One.png", "Fleetdeck_Lite.ex5": "Fleetdeck_Account_Overview.png", "MagicAtlasJournal_Lite.ex5": "Magic_Atlas_Snapshot.png", "Pilotdeck_Lite.ex5": "Pilotdeck_One.png", "Relaywire_Notify.ex5": "Relaywire_Notify.png", "Rewindeck_One.ex5": "Rewindeck_One.png", "Twinlane_Copier_Lite.ex5": "Twinlane_Copier_One.png"};</script>
+<script src="assets/i18n.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>
